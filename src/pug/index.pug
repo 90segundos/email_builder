@@ -1,0 +1,30 @@
+//-html
+
+-var title = 'Document Title';
+
+include includes/mixins.pug
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+html
+  head
+    meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title=title
+    include includes/normalize.pug
+    link(href="css/style.css" type="text/css" rel="stylesheet")
+    // Test comment
+  body(yahoo)
+    table(class="background-table" border="0" cellspacing="0" cellpadding="0")
+      +verticalSpacing(4)
+      tr
+        td
+          table(class="content-table" border="0" cellspacing="0" cellpadding="0" align="center")
+            +verticalSpacing(1)
+            tr
+              +horizontalSpacing(2)
+              td
+                h1=title
+                p.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              +horizontalSpacing(2) 
+            +verticalSpacing(4)

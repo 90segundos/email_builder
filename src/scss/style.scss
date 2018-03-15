@@ -1,0 +1,58 @@
+//
+// Style.scss
+//
+
+//
+// Variables
+
+$global__spacing-unit: 10px;
+
+$global__font-size: 14px;
+$body__color: #333333;
+$body__background-color: #f2f2f2;
+
+ $content-table__background-color : #ffffff;
+
+//
+// Style
+
+body {
+  font-size: $global__font-size;
+  color: $body__color;
+  background-color: $body__background-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+}
+
+//
+// Objects
+
+.background-table {
+  width: 100%;
+  background-color: $body__background-color;
+}
+
+.content-table {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  background-color: $content-table__background-color;
+}
+
+
+//
+// Utilities
+
+@for $i from 1 through 6 {
+  .u-height--#{$i} {
+    height: $global__spacing-unit*$i;
+  }
+}
+
+@for $i from 1 through 6 {
+  .u-width--#{$i} {
+    width: $global__spacing-unit*$i;
+  }
+}
