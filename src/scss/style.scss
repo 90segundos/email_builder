@@ -11,7 +11,8 @@ $global__font-size: 14px;
 $body__color: #333333;
 $body__background-color: #f2f2f2;
 
- $content-table__background-color : #ffffff;
+$content-table__width: 600px;
+$content-table__background-color : #ffffff;
 
 //
 // Style
@@ -20,12 +21,22 @@ body {
   font-size: $global__font-size;
   color: $body__color;
   background-color: $body__background-color;
+  line-height: $global__font-size*1.2;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p, a, ul, li {
   font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  line-height: $global__font-size*1.2;
 }
-
+p {
+  font-size: $global__font-size;
+}
+a {
+  color: #1e85be;
+}
 //
 // Objects
 
@@ -55,4 +66,8 @@ h1, h2, h3, h4, h5, h6 {
   .u-width--#{$i} {
     width: $global__spacing-unit*$i;
   }
+}
+
+.u-fullwidth {
+  width: 100%;
 }

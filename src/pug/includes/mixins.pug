@@ -1,6 +1,8 @@
 mixin verticalSpacing(factor)
-  tr
-    td(class="u-height--"+factor)
+  - factor = factor || '1'
+   tr
+    td(class="u-height--"+factor colspan ="3") &nbsp;
       
 mixin horizontalSpacing(factor)
-    td(class="u-width--"+factor)
+  - factor = factor || '1'
+    td(class="u-width--"+factor) &nbsp;
