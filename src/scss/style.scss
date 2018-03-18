@@ -1,53 +1,27 @@
 @charset "UTF-8";
 
-@import "03_generic/normalize.css"
 
-//
-// Style.scss
-//
+// Settings
+@import "01_settings/settings.config.scss";
+// Tools
+@import "02_tools/tools.debug.scss";
+// Generic
+@import "03_generic/generic.normalize.css";
+// elements
+@import "04_elements/elements.global.scss";
+// Objects
 
-//
-// Variables
+// Components
 
-$global__spacing-unit: 10px;
-
-$global__font-size: 14px;
-$body__color: #333333;
-$body__background-color: #f2f2f2;
-
-$content-table__width: 600px;
-$content-table__background-color : #ffffff;
-
-//
-// Style
-
-body {
-  font-size: $global__font-size;
-  color: $body__color;
-  background-color: $body__background-color;
-  line-height: $global__font-size*1.2;
-}
-
-h1, h2, h3, h4, h5, h6, p, a, ul, li {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333333;
-  line-height: $global__font-size*1.2;
-}
-p {
-  font-size: $global__font-size;
-}
-a {
-  color: #1e85be;
-}
+// Utilities
+@import "07_utilities/utilities.scss";
 
 //
 // Objects
 
 .background-table {
   width: 100%;
-  background-color: $body__background-color;
+  background-color: $global__background-color;
 }
 
 .content-table {
@@ -55,24 +29,4 @@ a {
   max-width: 600px;
   margin: auto;
   background-color: $content-table__background-color;
-}
-
-
-//
-// Utilities
-
-@for $i from 1 through 6 {
-  .u-height--#{$i} {
-    height: $global__spacing-unit*$i;
-  }
-}
-
-@for $i from 1 through 6 {
-  .u-width--#{$i} {
-    width: $global__spacing-unit*$i;
-  }
-}
-
-.u-fullwidth {
-  width: 100%;
 }

@@ -1,0 +1,19 @@
+//
+// Utilities
+//
+
+@for $i from 1 through 6 {
+  .u-height--#{$i} {
+    height: $global__spacing-unit*$i;
+  }
+}
+
+@for $i from 1 through 6 {
+  .u-width--#{$i} {
+    width: $global__spacing-unit*$i;
+  }
+}
+
+.u-fullwidth {
+  width: 100%;
+}

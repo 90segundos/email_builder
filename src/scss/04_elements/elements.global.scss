@@ -1,0 +1,21 @@
+//
+// Elements - Global
+//
+
+body {
+  font-size: $global__font-size;
+  color: $global__color;
+  background-color: $global__background-color;
+}
+h1, h2, h3, h4, h5, h6, p, a, ul, li {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: $global__font-size;
+  line-height: $global__font-size*1.25;
+}
+a {
+  color: #1e85be;
+}
