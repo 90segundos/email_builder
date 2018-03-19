@@ -6,9 +6,25 @@ $button__background-color: #9eb104;
 $button__color: #ffffff;
 $button__border-radius: 5px;
 
+$footer__background-color: #2a3441;
+$footer__color: #7d8590;
+$footer-link__color: #ffffff;
+
+
 .c-button {
   background-color: $button__background-color;
   color: $button__color;
   border-radius: $button__border-radius;
   overflow: hidden;
+}
+
+.c-footer {
+  background-color: $footer__background-color;
+  color: $footer__color;
+  font-size: 13px;
+  font-family: 'sans-serif';
+}
+.c-footer__link {
+  color: $footer-link__color;
+  text-decoration: underline;
 }

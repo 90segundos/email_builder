@@ -22,7 +22,9 @@
 .o-col--1 {
   max-width: ($content-table__width/4) - 25px/2;
 }
-
+.o-col--2 {
+  max-width: ($content-table__width/4)*2 - 25px/2;
+}
 .o-col--3 {
   max-width: ($content-table__width/4)*3 - 25px/2;
 }
