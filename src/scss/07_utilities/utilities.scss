@@ -5,9 +5,11 @@
 $border-bottom__color: #f2eeed;
 
 td[class^="u-height--"]{
+  font-size: 0;
   line-height: 0;
 }
 td[class^="u-width--"] {
+  font-size: 0;
   line-height: 0;
   @media only screen and (max-width: 599px) {
     width: 20px !important;
