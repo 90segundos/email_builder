@@ -6,9 +6,10 @@ body {
   font-size: $global__font-size;
   color: $global__color;
   background-color: $global__background-color;
+  font-family: $global__font-family;
 }
 h1, h2, h3, h4, h5, h6, p, a, ul, li {
-  font-family: sans-serif;
+  font-family: $global__font-family;
   margin: 0;
   padding: 0;
 }

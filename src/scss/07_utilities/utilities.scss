@@ -2,26 +2,35 @@
 // Utilities
 //
 
-@for $i from 1 through 6 {
+$border-bottom__color: #f2eeed;
+
+td[class^="u-height--"]{
+  line-height: 0;
+}
+td[class^="u-width--"] {
+  line-height: 0;
+  @media only screen and (max-width: 599px) {
+    width: 20px !important;
+  }
+}
+@for $i from 1 through 8 {
   .u-height--#{$i} {
     height: $global__spacing-unit*$i;
-    line-height: 0;
   }
 }
-
-@for $i from 1 through 6 {
+@for $i from 1 through 8 {
   .u-width--#{$i} {
     width: $global__spacing-unit*$i;
-  }
-}
-
-@media only screen and (max-width: 599px) {
-  td[class^="u-width--"] {
-    width: 20px !important;
   }
 }
 
 
 .u-fullwidth {
   width: 100%;
+}
+.u-border-bottom {
+  border-bottom: solid 1px $border-bottom__color;
+}
+.u-underline {
+  text-decoration: underline;
 }

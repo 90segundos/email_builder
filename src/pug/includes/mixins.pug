@@ -1,7 +1,9 @@
-mixin verticalSpacing(factor)
+mixin verticalSpacing(factor, colspan)
   - factor = factor || '1'
+  - colspan = colspan || '3'
+  
    tr
-    td(class="u-height--"+factor colspan ="3") &nbsp;
+    td(class="u-height--"+factor colspan =colspan) &nbsp;
       
 mixin horizontalSpacing(factor)
   - factor = factor || '1'
