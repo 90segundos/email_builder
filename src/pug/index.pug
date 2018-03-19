@@ -13,38 +13,41 @@ html
     link(href="css/style.css" type="text/css" rel="stylesheet")
     
   body(yahoo)
-  
-    table(class="background-table" border="0" cellspacing="0" cellpadding="0")
-      +verticalSpacing(4)
+    //- background-table
+    table(class="o-background-table" border="0" cellspacing="0" cellpadding="0")
+      +verticalSpacing(2)
       tr
         td
           
           //-content
-          table(class="content-table" border="0" cellspacing="0" cellpadding="0" align="center")
+          table(class="o-content-table" border="0" cellspacing="0" cellpadding="0" align="center")
             tr
               td
                 //- header
-                table(class="header" border="0" cellspacing="0" cellpadding="0" align="center")
-                  +verticalSpacing(4)
+                table(class="o-container c-header" border="0" cellspacing="0" cellpadding="0" align="center")
+                  +verticalSpacing(2)
                   tr
-                    +horizontalSpacing(4)
+                    +horizontalSpacing(2)
                     td
                       h1=title
-                    +horizontalSpacing(4)
-                  +verticalSpacing(4)
+                    +horizontalSpacing(2)
+                  +verticalSpacing(2)
                 //- /header
                 
-                //- main-content
-                table(class="main-content" border="0" cellspacing="0" cellpadding="0" align="center")
+                //- text
+                table(class="o-container c-text" border="0" cellspacing="0" cellpadding="0" align="center")
                   tr
-                    +horizontalSpacing(4)
+                    +horizontalSpacing(2)
                     td
                       p.
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    +horizontalSpacing(4)
+                    +horizontalSpacing(2)
                   +verticalSpacing(2)
-                //- /main-content
+                //- /text
           //- /content  
       
       +verticalSpacing(4)        
     //- /background-table
+  
+  //- /body
+//- /html

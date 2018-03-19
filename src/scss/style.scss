@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 // Settings
 @import "01_settings/settings.config.scss";
 // Tools
@@ -10,23 +9,8 @@
 // elements
 @import "04_elements/elements.global.scss";
 // Objects
-
+@import "05_objects/objects.scss";
 // Components
-
+@import "06_components/components.scss";
 // Utilities
 @import "07_utilities/utilities.scss";
-
-//
-// Objects
-
-.background-table {
-  width: 100%;
-  background-color: $global__background-color;
-}
-
-.content-table {
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
-  background-color: $content-table__background-color;
-}

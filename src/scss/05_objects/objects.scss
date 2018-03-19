@@ -1,0 +1,19 @@
+//
+// Objects - Layout
+//
+
+.o-background-table {
+  width: 100%;
+  background-color: $global__background-color;
+}
+
+.o-content-table {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  background-color: $content-table__background-color;
+}
+
+.o-container {
+  width: 100%;
+}
