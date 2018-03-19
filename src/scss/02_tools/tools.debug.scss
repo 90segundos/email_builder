@@ -1,4 +1,4 @@
-$debug-mode : true;
+$debug-mode : false;
 
 $debug-elements : (
   table:false,
@@ -8,7 +8,7 @@ $debug-elements : (
 $debug-colors : (
   table:#f4855d,
   tr: #b6527f,
-  td:#299d70,
+  td:#f17665,
 );
 
 @if($debug-mode){
