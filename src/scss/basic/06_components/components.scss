@@ -6,6 +6,7 @@ $button__background-color: #9eb104;
 $button__color: #ffffff;
 $button__border-radius: 5px;
 $button__font-size: 16px;
+$button__font-weight: bold;
 
 $footer__background-color: #2a3441;
 $footer__color: #7d8590;
@@ -23,6 +24,14 @@ $legal__font-size: 12px;
   color: $button__color;
   border-radius: $button__border-radius;
   overflow: hidden;
+  max-width: 100%;
+}
+.c-button__text {
+  font-size: $button__font-size;
+  color: $button__color;
+  text-align: center;
+  font-weight: $button__font-weight;
+  display: block;
 }
 .c-rule {
   border-bottom: solid 1px $rule__color;

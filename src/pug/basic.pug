@@ -1,6 +1,24 @@
 //-html
 
--var title = 'Document Title';
+block config
+
+  -var title = 'title';
+
+  -var main_heading = 'Main heading';
+
+  -var main_img_src = '#';
+  -var main_img_alt = '';
+  
+  -var landing_url = '#';
+  -var landing_alt = '';
+
+  -var send_email = false;
+
+  -var button_url = '#';
+  -var button_text = 'Más información';
+
+  -var sender = '';
+  -var region = '';
 
 include includes/mixins.pug
 
@@ -31,7 +49,7 @@ html
                   tr
                     +horizontalSpacing(2)
                     td
-                      |hola
+                      h1(class="c-main-title")=main_heading
                     +horizontalSpacing(2)
                   +verticalSpacing(2)
                       
@@ -49,7 +67,7 @@ html
                     +horizontalSpacing(2)
                   +verticalSpacing(2)
             //- /text
-            
+              
             //- text--columns
             tr
               td
@@ -59,7 +77,7 @@ html
                     td
                       
                       //- column 1
-                      table(class="o-col o-col--2 c-text" border="0" cellspacing="0" cellpadding="0" align="left")
+                      table(class="o-col o-col--1 c-text" border="0" cellspacing="0" cellpadding="0" align="left")
                         tr
                           td.
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -67,11 +85,31 @@ html
                       //- /column 1
                       
                       //- column 2
-                      table(class="o-col o-col--2 c-text" border="0" cellspacing="0" cellpadding="0" align="right")
+                      table(class="o-col o-col--3 c-text" border="0" cellspacing="0" cellpadding="0" align="right")
                         tr
                           td.
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         +verticalSpacing(2,1)
+                        
+                        //- button
+                        //- +verticalSpacing(2,1)
+                        tr
+                          td
+                            a(href=button_url)
+                              table(class="c-button" border="0" cellspacing="0" cellpadding="0" align="left")
+                                +verticalSpacing(1,5)
+                                tr
+                                  +horizontalSpacing(4)
+                                  td
+                                    span(class="c-button__text")=button_text
+                                  +horizontalSpacing(1)  
+                                  td
+                                    img(class="c-button__icon" src="img/arrow_white.png" alt="")
+                                  +horizontalSpacing(4)
+                                +verticalSpacing(1,4)
+                        +verticalSpacing(2,1)
+                        //- /button
+                        
                       //- /column 2
                       
                     +horizontalSpacing(2)
@@ -96,6 +134,22 @@ html
                     +horizontalSpacing(2)
                   +verticalSpacing(2)
             //- /text
+            
+            //- button
+            //- +verticalSpacing(2,1)
+            tr
+              td
+                a(href=button_url)
+                  table(class="c-button" border="0" cellspacing="0" cellpadding="0" align="center")
+                    +verticalSpacing(1)
+                    tr
+                      +horizontalSpacing(4)
+                      td
+                        span(class="c-button__text")=button_text
+                      +horizontalSpacing(4)
+                    +verticalSpacing(1)
+            +verticalSpacing(2,1)
+            //- /button
             
             //- footer
             tr

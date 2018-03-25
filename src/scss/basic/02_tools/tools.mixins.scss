@@ -1,0 +1,10 @@
+//
+// Mixins
+//
+
+@mixin column_width($columns: 4) {
+  $width_available: map-get($global__content-sizes,'desktop') - $global__content-padding;
+  $main_division: ($width_available / 4) * $columns;
+  $column_width: $main_division - $global__clear-space;
+  width: #{$column_width};
+}

@@ -2,15 +2,6 @@
 // Objects - Layout
 //
 
-//
-// Column widths
-
-$column-widths : (
-  ( #{map-get($global__content-sizes, 'desktop')} - ( $global__content-padding*2) )/4 - ($global__clear-space/2 ),
-  ( #{map-get($global__content-sizes, 'desktop')} - ( $global__content-padding*2 ) )/2 - ($global__clear-space/2 ),
-  ( ( ( #{map-get($global__content-sizes, 'desktop')} - $global__content-padding*2 ) / 4 ) ) - ( $global__clear-space/2 ),
-  ( #{map-get($global__content-sizes, 'desktop')} - ( $global__content-padding*2 ) )
-);
 
 .o-background-table {
   width: 100%;
@@ -48,14 +39,14 @@ $column-widths : (
   }
 }
 .o-col--1 {
-  width: #{nth($column-widths,1)};
+  @include column_width(1);
 }
 .o-col--2 {
-  width: #{nth($column-widths,2)};
+  @include column_width(2);
 }
 .o-col--3 {
-  width: #{nth($column-widths,3)};
+  @include column_width(3);
 }
 .o-col--4 {
-  width: #{nth($column-widths,4)};
+  @include column_width(4);
 }
