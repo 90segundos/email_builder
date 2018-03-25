@@ -16,7 +16,7 @@ var directories = {
   'pug_src':    ['pug/*.pug'],
   'pug_dest':  'html',
   'sass_watch': ['scss/**/*.*'],
-  'sass_src':   ['scss/*.scss'],
+  'sass_src':   ['scss/*/*.scss'],
   'sass_dest': 'css',
   'css_src': ['css/**/*.css'],
   'css_dest': '../css',

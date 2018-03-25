@@ -1,0 +1,30 @@
+//
+// Settings
+//
+
+$global__spacing-unit: 10px;
+
+$global__font-size: 14px;
+$global__font-family: 'Helvetica','Arial', sans-serif;
+
+$global__color: #333333;
+$global__background-color: #e6ddcf;
+
+
+// Content
+$global__content-background-color: #ffffff;
+$global__content-padding: $global__spacing-unit * 2;
+$global__breakpoints: (
+  tablet: 599px,
+  mobile: 479px
+);
+$global__content-sizes: (
+  desktop: 600px,
+  tablet: 480px,
+  mobile: 280px
+);
+$global__inner-content-sizes: (
+  desktop: #{map-get($global__content-sizes,'desktop') - $global__content-padding }
+);
+
+$global__clear-space: 25px; // ie 9 rendering fix

@@ -1,0 +1,61 @@
+//
+// Objects - Layout
+//
+
+//
+// Column widths
+
+$column-widths : (
+  ( #{map-get($global__content-sizes, 'desktop')} - ( $global__content-padding*2) )/4 - ($global__clear-space/2 ),
+  ( #{map-get($global__content-sizes, 'desktop')} - ( $global__content-padding*2 ) )/2 - ($global__clear-space/2 ),
+  ( ( ( #{map-get($global__content-sizes, 'desktop')} - $global__content-padding*2 ) / 4 ) ) - ( $global__clear-space/2 ),
+  ( #{map-get($global__content-sizes, 'desktop')} - ( $global__content-padding*2 ) )
+);
+
+.o-background-table {
+  width: 100%;
+  background-color: $global__background-color;
+}
+
+.o-content-table {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  background-color: $global__content-background-color;
+  @each $device, $width in $global__breakpoints {
+    @media only screen and (max-width: $width) {
+      width: #{map-get($global__content-sizes, $device)} !important;
+    }
+  }
+}
+.o-container {
+  width: #{map-get($global__content-sizes, 'desktop')};
+  @each $device, $width in $global__breakpoints {
+    @media only screen and (max-width: $width) {
+      width: #{map-get($global__content-sizes, $device)} !important;
+    }
+  }
+}
+.o-container--inner {
+
+}
+.o-col {
+  width: 100%;
+  @each $device, $width in $global__breakpoints {
+    @media only screen and (max-width: $width) {
+      width: #{map-get($global__content-sizes, $device) - $global__content-padding*2 } !important;
+    }
+  }
+}
+.o-col--1 {
+  width: #{nth($column-widths,1)};
+}
+.o-col--2 {
+  width: #{nth($column-widths,2)};
+}
+.o-col--3 {
+  width: #{nth($column-widths,3)};
+}
+.o-col--4 {
+  width: #{nth($column-widths,4)};
+}

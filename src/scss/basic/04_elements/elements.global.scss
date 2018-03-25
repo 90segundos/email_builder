@@ -1,0 +1,28 @@
+//
+// Elements - Global
+//
+
+body {
+  font-size: $global__font-size;
+  color: $global__color;
+  background-color: $global__background-color;
+  font-family: $global__font-family;
+}
+h1, h2, h3, h4, h5, h6, p, a, ul, li {
+  font-family: $global__font-family;
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: $global__font-size;
+  line-height: $global__font-size*1.25;
+}
+a {
+  color: #1e85be;
+  text-decoration: none;
+}
+img {
+  text-align: center;
+  line-height: $global__font-size*3;
+  margin: auto;
+}

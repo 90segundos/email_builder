@@ -1,0 +1,62 @@
+//
+// Utilities
+//
+
+$border-bottom__color: #f2eeed;
+
+td[class^="u-height--"]{
+  font-size: 0;
+  line-height: 0;
+}
+td[class^="u-width--"] {
+  font-size: 0;
+  line-height: 0;
+  @media only screen and (max-width: 599px) {
+    width: 20px !important;
+  }
+}
+@for $i from 1 through 8 {
+  .u-height--#{$i} {
+    height: $global__spacing-unit*$i;
+  }
+}
+@for $i from 1 through 8 {
+  .u-width--#{$i} {
+    width: $global__spacing-unit*$i;
+  }
+}
+
+
+.u-fullwidth {
+  width: 100%;
+}
+.u-border-bottom {
+  border-bottom: solid 1px $border-bottom__color;
+}
+.u-underline {
+  text-decoration: underline;
+}
+.u-tablet-hide {
+  display: inherit;
+  @media only screen and (min-width: #{map-get($global__breakpoints, 'mobile')+1}) and (max-width: #{map-get($global__breakpoints, 'tablet')}) {
+    display: none;
+  }
+}
+.u-tablet-show {
+  display: none;
+  @media only screen and (min-width: #{map-get($global__breakpoints, 'mobile')+1}) and (max-width: #{map-get($global__breakpoints, 'tablet')}) {
+    display: inherit;
+  }
+}
+.u-mobile-hide {
+  display: inherit;
+  @media only screen and (max-width: #{map-get($global__breakpoints, 'mobile')}) {
+    display: none;
+  }
+}
+.u-mobile-show {
+  display: none;
+  @media only screen and (max-width: #{map-get($global__breakpoints, 'mobile')}) {
+    display: inherit;
+  }
+}

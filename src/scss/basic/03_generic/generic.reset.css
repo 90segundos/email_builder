@@ -1,9 +1,3 @@
-/* Normalization - client specific style */
-#outlook a{ padding:0; } /* Force Outlook to provide a "view in browser" message */
-.ReadMsgBody{ width:100%; } .ExternalClass{ width:100%; } /* Force Hotmail to display emails at full width */
-.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; } /* Force Hotmail to display normal line spacing */
-.appleBody a { color:#68440a!important; text-decoration: none;}
-.appleFooter a { color:#999999!important; text-decoration: none;}
 /* Reset styles */
 body { width:100%!important; height:100%!important; margin:0; padding:0; }
 body, table, td, a { -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; } /* Prevent WebKit and Windows mobile changing default text sizes */

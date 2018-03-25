@@ -1,0 +1,50 @@
+//
+// Components
+//
+
+$button__background-color: #9eb104;
+$button__color: #ffffff;
+$button__border-radius: 5px;
+$button__font-size: 16px;
+
+$footer__background-color: #2a3441;
+$footer__color: #7d8590;
+$footer-link__color: #ffffff;
+
+$rule__color: #e9e9e9;
+
+$legal__background-color: $global__background-color;
+$legal__color: lighten($global__color,20%);
+$legal__font-size: 12px;
+
+.c-button {
+  background-color: $button__background-color;
+  font-size: $button__font-size;
+  color: $button__color;
+  border-radius: $button__border-radius;
+  overflow: hidden;
+}
+.c-rule {
+  border-bottom: solid 1px $rule__color;
+  line-height: 0;
+}
+.c-footer {
+  background-color: $footer__background-color;
+  color: $footer__color  ;
+  font-size: 13px;
+  font-family: 'sans-serif';
+}
+.c-footer__link {
+  color: $footer-link__color;
+  text-decoration: underline;
+}
+.c-features {
+  background-color: #cfcdc7;
+  text-align: center;
+}
+.c-legal {
+  background-color: $legal__background-color;
+  color: $legal__color;
+  font-size: $legal__font-size;
+  text-align: justify;
+}
